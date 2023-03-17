@@ -1,0 +1,103 @@
+@media screen and (max-width:1024px){
+    .header__top  .search_product{
+        width: 200px;
+    }
+    .main_info {
+        flex-wrap: wrap;
+    }
+    .card_profile{
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width:768px){
+
+    .header__top  .header__contact{
+        font-size: 1rem;
+        column-gap: 10px;
+        justify-content: space-between;
+    }
+    .header__top  .header__contact .phone{
+        display: none;
+        
+    } 
+   .header .header__bottom {
+    font-size: 1rem;
+   }
+   .footer .footer_top .footer_top-item h4{
+    font-size: 1.2rem;
+   }
+}
+@media screen and ( max-width :426px ){
+    .header__top{
+        justify-content: space-around;
+    }
+    .header_navbar{
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0px 5px;
+        
+    }
+    .header_navbar-left{
+        position: relative;
+    }
+    
+    .Main__products .products_top, .main_info,.footer .footer_top{
+        flex-direction: column;
+        align-items: center;
+    }
+.footer .footer_top .footer_top-item{
+        width: 100%;
+    }
+    .header__contact{
+        padding: 5px 10px;
+        row-gap: 15px;
+        align-items: start;
+        font-size: 1.4rem;
+        font-weight:200;
+        column-gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        background: var(--bg-card-color);
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        border-radius: 15px;
+        outline: none;
+        
+    }
+    .header .header__bottom{
+        padding: 5px 10px;
+        row-gap: 15px;
+        align-items: start;
+        font-size: 1.4rem;
+        font-weight:200;
+        column-gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        background: var(--bg-card-color);
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        border-radius: 15px;
+        outline: none;
+    }
+    .header__top .search_product{
+        padding: 1px;
+        font-size: 1.4rem;
+        font-weight:200;
+        width: 100%;
+        height: max-content;
+        background: var(--bg-card-color);
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        border-radius: 15px;
+        outline: none;
+    }
+    .header__top .header__contact,.header .header__bottom,.header__top .search_product{
+        display: none;
+    }
+}

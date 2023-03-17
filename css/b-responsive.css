@@ -1,0 +1,42 @@
+ @media screen and (max-width: 425px){
+    
+    .GR-1{
+        text-align: center;
+    }
+    .GH-1{
+        float: none;
+        width: 100%;
+    }
+    .GH-2{
+        
+        float:none;
+        width: 100%;
+    }
+    .BL-card{
+        width: 100% !important;
+    }
+   
+    .B-recent{
+        float:none;
+    }
+
+ }
+
+@media screen and (max-width: 768px){
+    .B-Leftcolumn{
+        float: none;
+        width: 100%;
+    }
+    .B-rightcolumn{
+        float: none;
+        width: 100%;
+    }
+    .BL-card{
+        width: calc(50% - 30px);
+    }
+   
+    .B-recent{
+        float:right;
+    }
+}
+/* @media screen and (max-width: 1024px) */

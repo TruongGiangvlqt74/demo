@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/blog-style.css">
+    <link rel="stylesheet" href="css/b-responsive.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ------------------------header--------------------------- -->
+<div class="header ">
+    <div class="header__top container">
+        <div class="header_navbar header_navbar-left " onmouseleave="closeList('header__contact')"
+            onclick="cardShow('header__contact')"><i class="fa-solid fa-bars"></i></div>
+        <nav class="logo">
+            <img src="./img/img-bakery/bakery-onepage-logo-light.png" alt="">
+        </nav>
+        <form action="" class="search_product" id="search_product">
+            <input type="text" placeholder="Tìm Kiếm">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="header__contact" id="header__contact">
+            <nav class="phone">
+                <a href="">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+84 999 999 99</span>
+                </a>
+            </nav>
+            <nav class="Listshop">
+                <a href="">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Shop System</span>
+                </a>
+            </nav>
+            <nav class="user">
+                <a href="">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Login</span>
+                </a>
+            </nav>
+            <nav class="icon">
+                <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                <span>2</span>
+            </nav>
+
+        </div>
+        <div class="header_navbar header_navbar-right" onmouseleave="closeList('header__bottom')"
+            onclick="cardShow('header__bottom')"><i class="fa-solid fa-bars"></i></div>
+        <div class="header_navbar header_navbar-middle" onmouseleave="closeList('search_product')"
+            onclick="cardShow('search_product')"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <nav class="header_navbar header_navbar-end">
+            <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+            <span>2</span>
+        </nav>
+    </div>
+    <div class="header__bottom container" id="header__bottom">
+        <nav class="item"><a href="./index.html">HOME</a></nav>
+        <nav class="item showlist">
+            <a href="./shoping-cart.html">Delish Motichoor Ladoo Cake </a>
+            <i class="fa fa-angle-down" id="key_down" onclick="dropDown('card-dropDown')" aria-hidden="true"></i>
+            <i class="fa-solid fa-angle-up" id="key_up" onclick="closeCard('card-dropDown')"></i>
+            <ul class="list-item " id="card-dropDown">
+                <li><a href="./shoping-cart.html"> Delicious Choco Creamy Cake </a></li>
+                <li><a href="./shoping-cart.html">Heavenly Red Velvet Cake</a> </li>
+                <li><a href="./shoping-cart.html"> Delectable Red Velvet Cake </a></li>
+                <li><a href="./shoping-cart.html"> Gateaux Mousse</a></li>
+                <li><a href="./shoping-cart.html"> Heart Shaped Sweet Delight</a></li>
+            </ul>
+        </nav>
+        <nav class="item">
+            <a href="">Truffle Delight Cake</a>
+        </nav>
+        <nav class="item"><a href="">Cookies & Minicake </a></nav>
+        <nav class="item"><a href="">Blog</a></nav>
+        <nav class="item"><a href="">Special Offer</a></nav>
+    </div>
+</div>
+
+    <!-- header -->
+    <div class="B_header">
+        <div class="container GR-1 ">
+            <h3 class="GH-1 GH">BLOG</h3>
+            <div class="GH-2 GH  ">
+                <span><a href="#" class="text-decoration-none" >Home</a></span>
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </div>
+    </div>
+     <!-- header -->
+
+     <!-- right column -->
+     <div class="B-row container">
+        <div class="B-rightcolumn">
+
+            <div class="B-card container">
+                <h3 class="B-title">
+                    Pepernoten Recipe
+                </h3>
+                <h5 class="B-crip">
+                    By Karin Engelbrecht, Updated on 20/12/22
+                </h5>
+                <div class="img-1">
+                    <img src="/IMG3/IMG-1.webp" alt="" srcset="">
+                </div>
+                <div class="B-info">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    <B> INFO COOK TIME</B>
+                    <p>Prep: 20 mins <br>
+                        Cook: 30 mins <br>
+                        Resting Time: 24 hrs <br>
+                        Total: 24 hrs 50 mins <br>
+                        Servings: 15 servings <br>
+                        Yield: 3 dozen</p>
+                </div>
+                <div class="para">
+                <p class="B-para">This easy recipe—from Amsterdam's most famous patissier, Cees Holtkamp—delivers a fragrant batch of homemade pepernoten, the old-fashioned Dutch anise and honey cookies that are traditionally enjoyed as part of Dutch Sinterklaas festivities. </p>
+
+                <p class="B-para">Even though the Dutch themselves struggle to keep it straight, pepernoten should not be confused with kruidnoten. In fact, aside from their confusingly similar names and the fact that both cookies are consumed in the weeks surrounding St. Nicholas Day, they are nothing alike.</p>    
+                    
+                <p class="B-para"> Pepernoten is made with honey and ground aniseed and have a chewy texture, a subtle licorice flavor, and a rustic rusk-like shape. Kruidnoten are tiny, round crunchy cookies similar to gingerbread and are flavored with a heady blend of spices, including cinnamon, mace, white pepper, cardamom, cloves, and nutmeg.</p>   
+                    
+                <p class="B-para">The following recipe is from Koekje cookbook and has been translated from the original Dutch and published here with the permission of the publisher. While we've converted the recipe to U.S. measurements, this is a patissier's recipe and you'll get the best results using a digital kitchen scale and the original European measurements.</p>    
+                </div>
+                <div class="ingredients">
+                    <h5>Ingredients</h5>
+                    <ul>
+                        <li>1/2 cup honey</li>
+                        <li>1/4 cup water</li>
+                        <li>1/2 cup bruine basterdsuiker (see note below)</li>
+                        <li>3 1/3 cups rye flour</li>
+                        <li>1/2 teaspoon kosher salt</li>
+                        <li>Sunflower oil, as needed</li>
+                        <li>1 1/2 tablespoons ground anise seed</li>
+                        <li>1 tablespoon baking powder, sifted</li>
+                    </ul>
+                </div>
+                <div class="Steps">
+                    <h5>Steps to Make It</h5>
+                    <p><b>01.</b> Gather the ingredients.</p>
+                    <img src="/IMG3/content-1/c1-1.webp" alt="">
+                    <p><b>02.</b> In a saucepan, heat honey with 2 3/4 tablespoons of the water and the sugar until mixture reaches 194 F on a candy thermometer.
+                    </p>
+                    <img src="/IMG3/content-1/c1-2.webp" alt="">
+                    <p><b>03.</b> Remove saucepan from heat and mix in rye flour and salt using a hand mixer with a dough hook attachment (or pour mixture into bowl of a stand mixer with a dough hook attachment and knead dough that way).</p>
+                    <img src="/IMG3/content-1/c1-3.webp" alt="">
+                    <p><b>04.</b> Knead dough thoroughly. Grease some plastic wrap with sunflower oil and cover dough with plastic wrap. Allow dough to rest for one day at room temperature.</p>
+                    <img src="/IMG3/content-1/c1-4.webp" alt="">
+                    <p><b>05.</b> The next day, preheat oven to 340 F. Add ground anise, remaining 1 1/3 tablespoons water, and baking powder to dough. Knead well.</p>
+                    <img src="/IMG3/content-1/c1-5.webp" alt="">
+                    <p><b>06.</b> Rub a little sunflower oil into your hands and roll little balls, roughly the size of a marble.</p>
+                    <img src="/IMG3/content-1/c1-6.webp" alt="">
+                    <p><b>07.</b> Place the balls into a round spring form cake tin. The cake tin may be densely packed, it doesn't matter if the pepernoten touch each other.</p>
+                    <img src="/IMG3/content-1/c1-7.webp" alt="">
+                    <p><b>08.</b> Bake pepernoten for 20 minutes, until golden brown. When you lightly press down on the cookies, they should bounce back a little.</p>
+                    <img src="/IMG3/content-1/c1-8.webp" alt="">
+                    <p><b>09.</b> Take tin from oven, invert over a dish, and separate pepernoten. Allow to cool and keep in an airtight container.</p>
+                    <img src="/IMG3/content-1/c1-9.webp" alt="">
+                </div>
+            </div>
+            <div class="B-tags">
+                <div class="BL-tags-pro">
+                    <h5>TAGS: <span>cakes</span></h5>
+                </div>
+                <div class="BL-tags">
+                    <ul class="list-unstyled d-flex align-items-center justify-content-end">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+                                            <!-- left column -->
+                                                    
+        <div class="B-Leftcolumn">
+            <div class="container CT-B">
+                <div class="BL-card B-recent">
+                    <h3>RECENT POSTS</h3>
+    
+                    <div class="B-content row">
+                        <div class="BL-img col-md-5 col-lg-5 col-xl-5">
+                            <img src="/IMG3/IMG-1.webp" alt="">
+                        </div>
+                        <div class="BL-title col-md-7 col-lg-7 col-xl-7">
+                            <div class="entry-title">Pepernoten Recipe</div>
+                            <div class="author">By Karin Engelbrecht</div>
+                            <div class="BL-date">20/12/22</div>
+                        </div>
+                    </div>
+                    
+                    <div class="B-content row">
+                        <div class="BL-img col-md-5 col-lg-5 col-xl-5">
+                            <img src="/IMG3/img-2.webp" width="100%" height="auto" alt="">
+                        </div>
+                        <div class="BL-title col-md-7 col-lg-7 col-xl-7   ">
+                            <div class="entry-title">Dairy Free and Egg...</div>
+                            <div class="author">By Kristina Vanni</div>
+                            <div class="BL-date">21/02/23</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="BL-card B-cate">
+                    <h3>CATEGORIES</h3> 
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Breads</a>
+                            (2)
+                        </li>
+                        <li><a href="#">Cakes</a>
+                            (2)
+                        </li>
+                        <li><a href="#">Cookies</a>
+                            (1)
+                        </li>
+                        <li><a href="#">Cupcakes</a>
+                            (1)
+                        </li>
+                        <li><a href="#">Pies</a>
+                            (1)
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="BL-card B-Fright">
+                    <h3>UPCOMING EVENT</h3>
+                    <div class="countdown">
+                        <span class="countdown-row">
+                            <span class="countdown-section ">
+                                <span class="amount">00</span>
+                                <span class="period">Hours</span>
+                            </span>
+    
+                            <span class="countdown-section ">
+                                <span class="amount">00</span>
+                                <span class="period">Minutes</span>
+                            </span>
+    
+                            <span class="countdown-section ">
+                                <span class="amount">00</span>
+                                <span class="period">Seconds</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="BL-card B-Fright">
+                    <h3>FOLLOW US</h3>
+                    <div class="BL-contact">
+                        <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     </div>
+     <!-- footer -->
+
+<footer>
+    <div class="footer">
+        <div class="footer_top  ">
+            <div class="footer_top-item ">
+                <h4>Bakery</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt necessitatibus dolorum
+                    reprehenderit voluptatibus provident, illo, impedit ducimus, molestiae dolorem dignissimos eius
+                    minima dolor repellat! Et dicta placeat praesentium pariatur debitis.</p>
+            </div>
+            <div class="footer_top-item">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SEARCH</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">DOCUMENTATION</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="">Bánh Sinh Nhật</a></li>
+                    <li><a href="">Bánh Mỳ và Bánh Mặn</a></li>
+                    <li><a href="">Cookies & Minicake</a></li>
+                    <li><a href="">Cake fruit</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>MY ACCOUNT</h4>
+                <ul>
+                    <li><a href="">MY ACCOUNT</a></li>
+                    <li><a href="">MY ADDRESSES</a></li>
+                    <li><a href="">MY CART</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>MY Event</h4>
+                <ul>
+                    <li><a href="">new event</a></li>
+                    <li><a href="">New products</a></li>
+                    <li><a href="">Best Sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom container">
+            <p>© 2023 Bakery. All Rights Reserved. Powered by eProject B179.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

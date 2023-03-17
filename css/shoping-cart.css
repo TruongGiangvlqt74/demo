@@ -1,0 +1,231 @@
+:root{
+    --white-color :#fff;
+    --black-color : #000;
+    --text-color : #333;
+    --bg-color: #E54E1B;
+    --bg-item-color :#f6e58d;
+    --bg-card-color: #576574;
+    --boder-color: #a5b1c2;
+    --blurple-color:#22a6b3;
+}
+.Main_shopingcart{
+    width: 100%;
+    height: 300px;  
+    background-image: url(/Dung/img/page-oder/01.jpg);
+    background-repeat: no-repeat;
+    
+} 
+
+.header_shopingcart{
+    padding-top: 50px;
+}
+.header_shopingcart h3, .header_shopingcart a { 
+    color: white ;
+}
+.header_shopingcart ul {
+    display: flex;
+    align-items: center;
+}
+.header_shopingcart li a{
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.header_shopingcart li:first-child:hover a{
+color: #C10A28;
+}
+.header_shopingcart li:nth-child(2) a{
+    color: #C10A28;
+    
+}
+.header_shopingcart ul li :after {
+    content: ">";
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.4rem;
+    line-height: 24px;
+    font-weight: 700;
+}
+/* product cart */
+.Main_product_cart {
+    padding: 10px auto;
+    margin-bottom: 5px;
+    text-align: start;
+}
+.product_cart_img img {
+    width: 100%;
+    object-fit: cover; 
+}
+.product_cart_info{
+    padding: 5px 10px;
+
+}
+.product_cart_info h1 {
+    color: #C10A28;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.product_comments_block_extra{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding: 10px 0px;
+    color: var(--blurple-color);
+}
+.comments_note:after ,.total_reviews_pr::after,.open-comment-form::after {
+    content: "|";
+    padding: 0px 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.product_comments_block_extra :hover {
+    color:var(--bg-color) ;
+}
+.product-information p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.product-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items:end ;
+}
+.control-label ,.control-quanlity , .add-price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    width: inherit;
+}
+.text-info {
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    font-display: inline;
+}
+.control-label select,.control-quanlity input ,.add-price button {
+    background: var(--bg-color);
+    color: var(--white-color);
+    border: 1px  var(--text-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+.control-quanlity input {
+    width: 100%;
+}
+.card_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border: 1px double var(--boder-color);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.card_social .social_icon{
+    padding: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 25%;
+    margin-right: 5px;
+    text-align: center;
+    background-color: #E54E1B;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card_social .social_icon a {
+    color: var(--white-color);
+}
+.card_social .social_icon:hover{
+    background: #22a6b3;
+}
+.product_cart_category{
+    text-align: center;
+    background: #EBEBEB;
+    border-radius: 20px;
+}
+.product_cart_category h3 {
+    font-size: 1.4rem;
+    color: #C10A28;
+}
+.card_product-category {
+    padding: 5px;
+}
+.card_product-category-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.card_product-category-img img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.comments_notes {
+    color: #E54E1B;
+}
+.card_product-category h4 a{
+    color: #22a6b3;
+
+}
+.card_price-category {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #576574;
+    box-sizing: border-box;
+}
+.card_price-category span {
+    padding: 0px 10px;
+    color: #15beb0;
+}
+.card_price-category del {
+    color: #8e1f1f;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.card_product-category button {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    background: #10c403;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.category-banner{
+    height: auto;
+    margin: 5px 0px;
+    padding: 5px;
+    background-image: url(/Dung/img/img-bakery/carousel3.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-banner h1 {
+    color: #E54E1B;
+    text-transform: capitalize;
+}
+.category-banner button{
+    background: #22A6B3;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.category-banner button:hover {
+    background: #e4ebec;
+    color: var(--bg-color);
+}

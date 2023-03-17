@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="subcolor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery-mainpage</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/global.css"> -->
+    <!-- <link rel="stylesheet" href="css/reponsive.css"> -->
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/login.css">
+    </head>
+<body>
+
+    <div class="headingsection ">
+        <div class="header ">
+            <div class="header__top container">
+                <div class="header_navbar header_navbar-left " onmouseleave="closeList('header__contact')"
+                    onclick="cardShow('header__contact')"><i class="fa-solid fa-bars"></i></div>
+                <nav class="logo">
+                    <img src="./img/img-bakery/bakery-onepage-logo-light.png" alt="">
+                </nav>
+                <form action="" class="search_product" id="search_product">
+                    <input type="text" placeholder="Tìm Kiếm">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="header__contact" id="header__contact">
+                    <nav class="phone">
+                        <a href="">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+84 999 999 99</span>
+                        </a>
+                    </nav>
+                    <nav class="Listshop">
+                        <a href="./product.html">
+                            <i class="fa-solid fa-store"></i>
+                            <span>Shop System</span>
+                        </a>
+                    </nav>
+                    <nav class="user">
+                        <a href="./signup.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </nav>
+                    <nav class="icon">
+                        <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                        <span>2</span>
+                    </nav>
+    
+                </div>
+                <div class="header_navbar header_navbar-right" onmouseleave="closeList('header__bottom')"
+                    onclick="cardShow('header__bottom')"><i class="fa-solid fa-bars"></i></div>
+                <div class="header_navbar header_navbar-middle" onmouseleave="closeList('search_product')"
+                    onclick="cardShow('search_product')"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <nav class="header_navbar header_navbar-end">
+                    <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                    <span>2</span>
+                </nav>
+            </div>
+            <div class="header__bottom container" id="header__bottom">
+                <nav class="item"><a href="./index.html">HOME</a></nav>
+                <nav class="item showlist">
+                    <a href="./shoping-cart.html">Delish Motichoor Ladoo Cake </a>
+                    <i class="fa fa-angle-down" id="key_down" onclick="dropDown('card-dropDown')" aria-hidden="true"></i>
+                    <i class="fa-solid fa-angle-up" id="key_up" onclick="closeCard('card-dropDown')"></i>
+                    <ul class="list-item " id="card-dropDown">
+                        <li><a href="./shoping-cart.html"> Delicious Choco Creamy Cake </a></li>
+                        <li><a href="./shoping-cart.html">Heavenly Red Velvet Cake</a> </li>
+                        <li><a href="./shoping-cart.html"> Delectable Red Velvet Cake </a></li>
+                        <li><a href="./shoping-cart.html"> Gateaux Mousse</a></li>
+                        <li><a href="./shoping-cart.html"> Heart Shaped Sweet Delight</a></li>
+                    </ul>
+                </nav>
+                <nav class="item">
+                    <a href="./shoping-cart.html">Truffle Delight Cake</a>
+                </nav>
+                <nav class="item"><a href="shoping-cart.html">Cookies & Minicake </a></nav>
+                <nav class="item"><a href="./blog.html">Blog</a></nav>
+                <nav class="item"><a href="./product.html">Special Offer</a></nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container text-center">
+<div class="row justify-content-center d-flex ">
+    <div class="col-12 col-md-4 ">
+    <div class="SignUpForm">
+        
+        <div class="containerlogin">
+    <div class="title">
+        <span>Have an account?</span>
+    </div>
+    <form action="#">
+        <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+    <div class="button">
+        <input type="submit" class="submit" value="Login" id="">
+    </div>
+
+    <div class="two-col">
+        <div class="one">
+            <input type="checkbox" name="" id="check">
+            <label for="check"> Remember Me</label>
+        </div>
+        <div class="two">
+            <label><a href="#">Forgot password?</a></label>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+</div>  
+    </div>
+    <div class="SignUpForm col-12 col-md-8 pe-2">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" placeholder="Enter your username" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your number" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="text" placeholder="Confirm your password" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+            </form>
+        </div>
+        </div>
+    
+        </div>
+    </div>
+</div>
+<hr class="rounded">
+<!-- foter -->
+<footer>
+    <div class="footer">
+        <div class="footer_top container ">
+            <div class="footer_top-item ">
+                <h4>Bakery</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt necessitatibus dolorum
+                    reprehenderit voluptatibus provident, illo, impedit ducimus, molestiae dolorem dignissimos eius
+                    minima dolor repellat! Et dicta placeat praesentium pariatur debitis.</p>
+            </div>
+            <div class="footer_top-item">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./product.html">SEARCH</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./about-us.html">ABOUT US</a></li>
+                    <li><a href="./contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="./shoping-cart.html">Gateaux Mousse</a></li>
+                    <li><a href="./shoping-cart.html">Truffle Delight Cake</a></li>
+                    <li><a href="./shoping-cart.html">Cookies & Minicake</a></li>
+                    <li><a href="./shoping-cart.html">Cake fruit</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>MY ACCOUNT</h4>
+                <ul>
+                    <li><a href="./signup.html">MY ACCOUNT</a></li>
+                    <li><a href="./contact-us.html">MY ADDRESSES</a></li>
+                    <li><a href="./signup.html">MY CART</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>MY Event</h4>
+                <ul>
+                    <li><a href="./blog.html">new event</a></li>
+                    <li><a href="./product.html">New products</a></li>
+                    <li><a href="./shoping-cart.html">Best Sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom container">
+            <p>© 2023 Bakery. All Rights Reserved. Powered by eProject B179.</p>
+        </div>
+    </div>
+</footer>
+<script src="./js/cart.js"></script>
+<script src="./js/style.js"></script>
+<!-- Link script bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+<!-- owl -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+<script>$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            },
+            1440: {
+                items: 4
+            }
+        }
+    })
+});</script>
+</body>
+</html>

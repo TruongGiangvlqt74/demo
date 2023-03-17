@@ -1,0 +1,126 @@
+:root{
+    --ct-text-dark-color:#111;
+    --ct-text-white-color:#fff;
+    --ct-icon-color: #E54E1B
+}
+
+                                /* header */
+.B_header{
+    background:rgba(0, 0, 0, .5) url(/IMG3/header-6.jpg);
+    padding: 70px 0px;
+    background-size: cover;
+    background-blend-mode: darken;
+    box-shadow: 0px 20px 10px -15px rgb(169, 164, 164);
+    margin: 0px 0px 70px 0px;
+}
+.GR-1{
+    margin-bottom: 30px;
+}
+.GR-1>h3{
+    color:var(--ct-text-white-color) ;
+    
+}
+
+.GH-1{
+    float: left;
+    width: 90%;
+}
+.GH-2{
+    color: var(--ct-text-white-color);
+    float:right;
+    width: 10%;
+}
+.GH-2>span>a{
+    color: var(--ct-text-white-color);
+    font-size:20px ;
+    font-weight:600 ;
+    transition: .5s;  
+}
+.GH-2>span>a:hover{
+    color: var(--ct-icon-color);
+}   
+.GH-2>.fa-house{
+    margin-top: 7px ;
+    margin-left: 10px;
+}
+/* ----------------------------------------------- */
+.maps{
+    margin-bottom: 60px;
+    
+}
+.maps>iframe{
+    width: 100%;
+    
+}
+.contact-Fbody{
+    margin-bottom: 600px !important;
+}
+.contact-layout{
+    width: 35%;
+    float: left;
+    padding-right:25px;
+    
+}
+.contact-form{
+    width: 65%;
+    float: right;
+   
+}
+/*  */
+/* .contact-flow>h5{
+    
+} */
+.FL-contact>ul>li>a{
+    display: inline-block;
+    text-decoration: none;
+    background:#f87043;
+    border-radius: 50%;
+    padding: 7px;
+    color: var(--ct-text-white-color);
+    margin-left: 10px;
+    transition: 0.7s;
+    height: 45px;
+    width: 45px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.FL-contact>ul>li>a:hover{
+    background:var(--ct-text-white-color);
+    color: #E54E1B;
+    border: 2px solid #E54E1B;
+    font-size: 20px;
+    display: inline-block;
+}
+.FL-contact>ul>li>a>i{
+    margin-left: 6px;
+}
+
+/* ---------- */
+.form-group{
+    margin-bottom: 15px;
+}
+
+.send-bt{
+    padding: 10px 20px;
+    color: var(--ct-text-white-color);
+    background-color: #f87043;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.send-bt:hover{
+    padding: 10px 20px;
+    color: var(--ct-text-white-color);
+    background-color: #E54E1B;
+    border: none;
+    font-weight: 600;
+}
+.contact-info>ul{
+    list-style: none;
+}
+.contact-info>ul>li{
+    margin-bottom: 15px;
+}
+.contact-info>ul>li>i{
+    color: #E54E1B;
+}

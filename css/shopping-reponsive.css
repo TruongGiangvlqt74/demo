@@ -1,0 +1,29 @@
+@media screen and (min-width:1024px){
+    .product_cart_info h1{
+        font-size: 1.4rem;
+    }
+    .product_comments_block_extra{
+       font-size: 0.7rem;
+    }
+    .product-actions{
+       font-size: 1.2rem;
+    }   
+
+}
+@media screen and (min-width:758px){
+    .header_shopingcart li {
+        font-size: 1rem;
+    }
+    .add-price button {
+        font-size: 0.9rem;
+    }
+    .product_cart_category {
+        margin-top: 10px;
+        border-top: 1px solid var(--bg-card-color);
+    }
+    .category-banner {
+        margin-top: 10px;
+        height: 200px;
+        background-size: 100% 100%;
+    }
+}

@@ -1,0 +1,79 @@
+
+/* mobie */
+ @media screen and (max-width: 426px){
+    
+    .G_page-header{
+        margin: 0 auto;
+    }
+    .ABheader-left{
+        text-align: center;
+    }
+    .ABheader-right{
+        margin: 0 auto;
+    }
+    .ABheader-right>a{
+        margin: 0 0 0 auto ;
+    }
+    .ABheader-right>h5{
+        margin: 0 auto 0 0;
+    }
+    .form-news{
+        max-width:300px !important;
+        margin: 10px !important;
+     } 
+     .input-email{
+        margin-bottom: 5px;
+     }
+     .button-email{
+        width: 400px !important;
+     }
+ }
+/* tablet */
+@media screen and (max-width: 769px){
+    .ABheader-left>h3{
+        margin-left: 20px !important;
+    }
+    .ABheader-right{
+        padding: 0px;
+    }
+    .ABheader-right>a{
+        margin-left: 10px; 
+    }
+}
+
+/* laptop */
+@media screen and (max-width: 1025px){
+    .ABheader-left>h3{
+        margin-left: 0px;
+    }
+    .ABheader-right>a{
+        margin-left: 10px ; 
+    }
+    .intro-container{
+        margin-bottom: 30px;
+    }
+    .history-content{
+        padding: 20px 0;
+    }
+    .history-left{
+        padding:0;
+    }
+    .history-left .ct-1{
+        padding-top: 30px;
+     }
+     .form-news{
+        max-width:610px;
+        margin: auto;
+     } 
+}
+
+
+@media screen and (max-width: 1441px){
+    .ABheader-left>h3{
+        margin-left: 50px;
+    }
+    .ABheader-right>a{
+        margin-left: 150px; 
+        
+    }
+}

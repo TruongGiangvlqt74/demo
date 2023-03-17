@@ -1,0 +1,39 @@
+
+
+@media screen and (max-width: 425px){
+    .contact-layout{
+        width: 100%;
+        float: none;
+        margin-bottom: 100px;
+    }
+    .contact-form{
+        width: 100%;
+        float: none;
+        margin-bottom: 80px;
+    }
+    .GR-1{
+        text-align: center;
+    }
+    .GH-1{
+        float: none;
+        width: 100%;
+    }
+    .GH-2{
+        
+        float:none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .contact-layout{
+        width: 100%;
+        float: none;
+        margin-bottom: 100px;
+    }
+    .contact-form{
+        width: 100%;
+        float: none;
+        margin-bottom: 80px;
+    }
+}

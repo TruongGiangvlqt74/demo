@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="subcolor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery-mainpage</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/global.css"> -->
+    <!-- <link rel="stylesheet" href="css/reponsive.css"> -->
+    <link rel="stylesheet" href="./css/Main.css">
+    <link rel="stylesheet" href="./css/Main-reponsive.css">
+    </head>
+<body>
+    <div class="headingsection ">
+      <div class="header ">
+        <div class="header__top container">
+            <div class="header_navbar header_navbar-left " onmouseleave="closeList('header__contact')"
+                onclick="cardShow('header__contact')"><i class="fa-solid fa-bars"></i></div>
+            <nav class="logo">
+                <img src="./img/img-bakery/bakery-onepage-logo-light.png" alt="">
+            </nav>
+            <form action="" class="search_product" id="search_product">
+                <input type="text" placeholder="Tìm Kiếm">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="header__contact" id="header__contact">
+                <nav class="phone">
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+84 999 999 99</span>
+                    </a>
+                </nav>
+                <nav class="Listshop">
+                    <a href="./product.html">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Shop System</span>
+                    </a>
+                </nav>
+                <nav class="user">
+                    <a href="./signup.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Login</span>
+                    </a>
+                </nav>
+                <nav class="icon">
+                    <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                    <span>2</span>
+                </nav>
+
+            </div>
+            <div class="header_navbar header_navbar-right" onmouseleave="closeList('header__bottom')"
+                onclick="cardShow('header__bottom')"><i class="fa-solid fa-bars"></i></div>
+            <div class="header_navbar header_navbar-middle" onmouseleave="closeList('search_product')"
+                onclick="cardShow('search_product')"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <nav class="header_navbar header_navbar-end">
+                <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                <span>2</span>
+            </nav>
+        </div>
+        <div class="header__bottom container" id="header__bottom">
+            <nav class="item"><a href="./index.html">HOME</a></nav>
+            <nav class="item showlist">
+                <a href="./shoping-cart.html">Delish Motichoor Ladoo Cake </a>
+                <i class="fa fa-angle-down" id="key_down" onclick="dropDown('card-dropDown')" aria-hidden="true"></i>
+                <i class="fa-solid fa-angle-up" id="key_up" onclick="closeCard('card-dropDown')"></i>
+                <ul class="list-item " id="card-dropDown">
+                    <li><a href="./shoping-cart.html"> Delicious Choco Creamy Cake </a></li>
+                    <li><a href="./shoping-cart.html">Heavenly Red Velvet Cake</a> </li>
+                    <li><a href="./shoping-cart.html"> Delectable Red Velvet Cake </a></li>
+                    <li><a href="./shoping-cart.html"> Gateaux Mousse</a></li>
+                    <li><a href="./shoping-cart.html"> Heart Shaped Sweet Delight</a></li>
+                </ul>
+            </nav>
+            <nav class="item">
+                <a href="./shoping-cart.html">Truffle Delight Cake</a>
+            </nav>
+            <nav class="item"><a href="shoping-cart.html">Cookies & Minicake </a></nav>
+            <nav class="item"><a href="./blog.html">Blog</a></nav>
+            <nav class="item"><a href="./product.html">Special Offer</a></nav>
+        </div>
+    </div>
+    </div>
+    <!-- main -->
+    <div class="body_products container">
+    <div class="container- text-center mainbody my-5 d">
+        <div class="row d-flex flex-lg-row-reverse">
+          
+          <div class="col-12 col-md-12 col-lg-6 text-start my-auto">
+            <h2 class="subcolor2">About us</h2>
+            <h3>Resposive & Professional</h3>
+            <p>We believe and are dedicated to delivering premium quality products. So we only use real butter, cream, and unbleached flour. We treat our customers as our family and will not use any ingredient which we will not want to feed ours!</p>
+            <button type="button" class="btn btn-info"> <a style="text-decoration: none;color: white;" href="/about-us.html"> <b>Learn more</b></a></button>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6" style="height:100%">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/carousel1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/carousel2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/carousel3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div class="slide">
+      <h3>Hot Sale</h3>
+      
+  </div>
+        <div class="bottomcontent my-5 "  style="background-color: #f3f3f3">
+            <h3  style="text-align: center;">What We Offer</h3>
+            <div class="container text-center">
+                <div class="row">
+                  <div class=" col-12 col-md-6 col-lg-4  enlarge">
+                    <div class="card" style="width: 100%;">
+                        <img src="image/productimg.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Artisan pastries</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, expedita? Fugit placeat, magnam nesciunt hic optio numquam nobis! Veniam beatae ratione libero amet animi, quod optio qui voluptates minus dolorum!</p> 
+                          <a href="">Read more </a> 
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 enlarge">
+                    <div class="card" style="width: 100%;">
+                        <img style="height:268.39px" src="image/dessert.img" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Gourmet cakes and desserts</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, expedita? Fugit placeat, magnam nesciunt hic optio numquam nobis! Veniam beatae ratione libero amet animi, quod optio qui voluptates minus dolorum!</p>
+                          <a href="" class="">Read more</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="image/productimg2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Handcrafted
+                            beverages</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, expedita? Fugit placeat, magnam nesciunt hic optio numquam nobis! Veniam beatae ratione libero amet animi, quod optio qui voluptates minus dolorum!</p>
+                          <a href="" class="">Read more</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        <div class="gallery">
+          <h2>Gallery picture</h2>
+          <div class="container text-center ">
+              <div class="row">
+                  <div class="col-12 col-md-6 img-fluid" >
+                    <img style="width: 100%" src="image/gallery5.png" alt="">
+                  </div>
+                  
+                  <div class="col-12 col-md-6 container text-center">
+                      <div class="row">
+                          <div class="col-12">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 31px;">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active img-fluid ">
+                                  <img src="image/resized/gallery.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="image/resized/gallery2.jpg" class="d-block w-100 " alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="image/resized/gallery3.jpg" class="d-block w-100 " alt="...">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active img-fluid ">
+                                  <img src="image/resized/gallery4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="image/resized/gallery6.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="image/resized/gallery7.jpg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                            </div>
+                      </div>  
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>  
+    <hr class="rounded">
+    <!-- foter -->
+    <footer>
+      <div class="footer">
+          <div class="footer_top container ">
+              <div class="footer_top-item ">
+                  <h4>Bakery</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt necessitatibus dolorum
+                      reprehenderit voluptatibus provident, illo, impedit ducimus, molestiae dolorem dignissimos eius
+                      minima dolor repellat! Et dicta placeat praesentium pariatur debitis.</p>
+              </div>
+              <div class="footer_top-item">
+                  <h4>INFORMATION</h4>
+                  <ul>
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./product.html">SEARCH</a></li>
+                      <li><a href="./blog.html">BLOG</a></li>
+                      <li><a href="./about-us.html">ABOUT US</a></li>
+                      <li><a href="./contact-us.html">CONTACT US</a></li>
+                  </ul>
+              </div>
+              <div class="footer_top-item">
+                  <h4>PRODUCTS</h4>
+                  <ul>
+                      <li><a href="./shoping-cart.html">Gateaux Mousse</a></li>
+                      <li><a href="./shoping-cart.html">Truffle Delight Cake</a></li>
+                      <li><a href="./shoping-cart.html">Cookies & Minicake</a></li>
+                      <li><a href="./shoping-cart.html">Cake fruit</a></li>
+                  </ul>
+              </div>
+              <div class="footer_top-item">
+                  <h4>MY ACCOUNT</h4>
+                  <ul>
+                      <li><a href="./signup.html">MY ACCOUNT</a></li>
+                      <li><a href="./contact-us.html">MY ADDRESSES</a></li>
+                      <li><a href="./signup.html">MY CART</a></li>
+                  </ul>
+              </div>
+              <div class="footer_top-item">
+                  <h4>MY Event</h4>
+                  <ul>
+                      <li><a href="./blog.html">new event</a></li>
+                      <li><a href="./product.html">New products</a></li>
+                      <li><a href="./shoping-cart.html">Best Sale</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer_bottom container">
+              <p>© 2023 Bakery. All Rights Reserved. Powered by eProject B179.</p>
+          </div>
+      </div>
+  </footer>
+  <script src="./js/cart.js"></script>
+  <script src="./js/style.js"></script>
+  <!-- Link script bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  <!-- owl -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+  <script>$(document).ready(function () {
+          $('.owl-carousel').owlCarousel({
+              loop: true,
+              margin: 10,
+              nav: false,
+              responsive: {
+                  0: {
+                      items: 1
+                  },
+                  600: {
+                      items: 2
+                  },
+                  1000: {
+                      items: 3
+                  },
+                  1440: {
+                      items: 4
+                  }
+              }
+          })
+      });</script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="shortcut icon" href="./img/img-bakery/bakery-onepage-logo-light.png" type="image/x-icon">
+    <!-- link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- cds awesomeicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- links css -->
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/Main-reponsive.css">
+
+</head>
+
+<body class="wrapper">
+    <!-- header page -->
+    <div class="header ">
+        <div class="header__top container">
+            <div class="header_navbar header_navbar-left " onmouseleave="closeList('header__contact')"
+                onclick="cardShow('header__contact')"><i class="fa-solid fa-bars"></i></div>
+            <nav class="logo">
+                <img src="./img/img-bakery/bakery-onepage-logo-light.png" alt="">
+            </nav>
+            <form action="" class="search_product" id="search_product">
+                <input type="text" placeholder="Tìm Kiếm">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="header__contact" id="header__contact">
+                <nav class="phone">
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+84 999 999 99</span>
+                    </a>
+                </nav>
+                <nav class="Listshop">
+                    <a href="./product.html">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Shop System</span>
+                    </a>
+                </nav>
+                <nav class="user">
+                    <a href="./signup.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Login</span>
+                    </a>
+                </nav>
+                <nav class="icon">
+                    <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                    <span>2</span>
+                </nav>
+
+            </div>
+            <div class="header_navbar header_navbar-right" onmouseleave="closeList('header__bottom')"
+                onclick="cardShow('header__bottom')"><i class="fa-solid fa-bars"></i></div>
+            <div class="header_navbar header_navbar-middle" onmouseleave="closeList('search_product')"
+                onclick="cardShow('search_product')"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <nav class="header_navbar header_navbar-end">
+                <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                <span>2</span>
+            </nav>
+        </div>
+        <div class="header__bottom container" id="header__bottom">
+            <nav class="item"><a href="./index.html">HOME</a></nav>
+            <nav class="item showlist">
+                <a href="./shoping-cart.html">Delish Motichoor Ladoo Cake </a>
+                <i class="fa fa-angle-down" id="key_down" onclick="dropDown('card-dropDown')" aria-hidden="true"></i>
+                <i class="fa-solid fa-angle-up" id="key_up" onclick="closeCard('card-dropDown')"></i>
+                <ul class="list-item " id="card-dropDown">
+                    <li><a href="./shoping-cart.html"> Delicious Choco Creamy Cake </a></li>
+                    <li><a href="./shoping-cart.html">Heavenly Red Velvet Cake</a> </li>
+                    <li><a href="./shoping-cart.html"> Delectable Red Velvet Cake </a></li>
+                    <li><a href="./shoping-cart.html"> Gateaux Mousse</a></li>
+                    <li><a href="./shoping-cart.html"> Heart Shaped Sweet Delight</a></li>
+                </ul>
+            </nav>
+            <nav class="item">
+                <a href="./shoping-cart.html">Truffle Delight Cake</a>
+            </nav>
+            <nav class="item"><a href="shoping-cart.html">Cookies & Minicake </a></nav>
+            <nav class="item"><a href="./blog.html">Blog</a></nav>
+            <nav class="item"><a href="./product.html">Special Offer</a></nav>
+        </div>
+    </div>
+    <!-- Body page -->
+    <main>
+        <!-- Banner Quảng cáo -->
+        <div class="card_banner container">
+            <div class="form_banner">
+                <h4>Up To 18% Off</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum velit a repudiandae ad ut? Libero
+                    quibusdam impedit vel error aspernatur, illum delectus ipsam tempore minus officia dolores aperiam
+                    asperiores unde!</p>
+                <form action="">
+                    <button class="banner_button">Click here</button>
+                </form>
+            </div>
+        </div>
+        <!-- Danh sách nổi bật -->
+        <section class="Main__products container">
+            <h2>LIST PRODUCTS </h2>
+            <div class="products_top" >
+                <div class="card__product-top item" data-key ={1} >
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/01.png" alt="">
+                    </div>
+                    <h3>Petit83-01</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>380.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__product-top item" data-key ={2}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/03.png" alt="">
+                    </div>
+                    <h3>Petit83-02</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>390.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__product-top item" data-key ={3}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/04.png" alt="">
+                    </div>
+                    <h3>Petit83-03</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>370.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__product-top item" data-key ={4}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/05.png" alt="">
+                    </div>
+                    <h3>Petit83-04</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>360.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__product-top item" data-key ={5}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/06.png" alt="">
+                    </div>
+                    <h3>Petit83-05</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>350.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__product-top item" data-key ={6}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/07.png" alt="">
+                    </div>
+                    <h3>Petit83-06</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>350.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__product-top item" data-key ={7}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/10.png" alt="">
+                    </div>
+                    <h3>Petit83-07</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>350.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="card__product-top item" data-key ={8}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/09.png" alt="">
+                    </div>
+                    <h3>Petit83-08</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>390.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__product-top item" data-key ={9}>
+                    <div class="card__product-img">
+                        <img src="./img/img-bakery/cart-product/08.png" alt="">
+                    </div>
+                    <h3>Petit83-09</h3>
+                    <div class="cart__vote">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="card__action">
+                        <div class="card__price"> Price:
+                            <span>400.000</span>đ
+                        </div>
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cart-shopping"> </i>
+                            <button class="add"> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- them slide -->
+        <div class="listcartmyproducts form_table" id="form_table">
+            <div class="table_actions">
+                <a href="">Buy more..</a>
+                <span onclick="closeTable('table')">Close</span>
+            </div>
+            <div class="listCart">
+                <div class="Thanhtoan">
+                    <table class="table table-success">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">image</th>
+                            <th scope="col">Title </th>
+                            <th scope="col">Price</th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">Choose</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                             <!-- <th scope="row">1</th> 
+                             <td><img src="./img/chef/01-1.jpg"  width= 50 alt=""></td> 
+                             <td><span class ="title_productname">productName</span></td>
+                              <td><span class = "products">productPrice</span></td>
+                               <td><input type="number" value="1" min="0"></td> 
+                             <td class ="cart_delete">xóa</td> -->
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div class="tongtien">Tổng tiền : <span>0</span>$</div>
+                </div>
+            </div>
+        </div>
+        <!-- danh sách đầu bếp -->
+        <div class="main_profile container">
+            <h3>Famous Chefs</h3>
+            <div class="main_info ">
+                <div class="card_profile ">
+                    <div class="card_profile-img">
+                        <img src="./img/chef/01-1.jpg" alt="david">
+                    </div>
+                    <div class="card_profile-name"><i class="fa-solid fa-user"></i><span>
+                            Ana </span></div>
+                    <div class="card_profile-skill"><i class="fa-solid fa-kitchen-set"></i><span>Cooking</span> </div>
+                    <div class="card_profile-info"><i class="fa-solid fa-file-lines"></i><span> Lorem ipsum dolor, sit
+                            amet consectetur adipisicing elit.</span></div>
+                    <div class="card_profile-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="card_profile ">
+                    <div class="card_profile-img">
+                        <img src="./img/chef/02-2.jpg" alt="david">
+                    </div>
+                    <div class="card_profile-name"><i class="fa-solid fa-user"></i><span>
+                            Anadson steve</span></div>
+                    <div class="card_profile-skill"><i class="fa-solid fa-kitchen-set"></i><span>Cooking</span> </div>
+                    <div class="card_profile-info"><i class="fa-solid fa-file-lines"></i><span> Lorem ipsum dolor, sit
+                            amet consectetur adipisicing elit.</span></div>
+                    <div class="card_profile-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="card_profile ">
+                    <div class="card_profile-img">
+                        <img src="./img/chef/03-3.jpg" alt="david">
+                    </div>
+                    <div class="card_profile-name"><i class="fa-solid fa-user"></i><span>
+                            Anadson</span></div>
+                    <div class="card_profile-skill"><i class="fa-solid fa-kitchen-set"></i><span>Cooking</span> </div>
+                    <div class="card_profile-info"><i class="fa-solid fa-file-lines"></i><span> Lorem ipsum dolor, sit
+                            amet consectetur adipisicing elit.</span></div>
+                    <div class="card_profile-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="card_profile ">
+                    <div class="card_profile-img">
+                        <img src="./img/chef/04.-4.jpg" alt="david">
+                    </div>
+                    <div class="card_profile-name"><i class="fa-solid fa-user"></i><span>
+                            Anadson</span></div>
+                    <div class="card_profile-skill"><i class="fa-solid fa-kitchen-set"></i><span>Cooking</span> </div>
+                    <div class="card_profile-info"><i class="fa-solid fa-file-lines"></i><span> Lorem ipsum dolor, sit
+                            amet consectetur adipisicing elit.</span></div>
+                    <div class="card_profile-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gio hang -->
+        <!-- <div class="form_table" id="table">
+            <table class="table table-success">
+                <tbody>
+                    <th>#</th>
+                    <th>image</th>
+                    <th>Product</th>
+                    <th>quantity</th>
+                    <th>price</th>
+                    <th>Total</th>
+                    <th>Delete</th>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>image 1</td>
+                        <td>product 1</td>
+                        <td><span>1</span></td>
+                        <td><span>380.000</span><sup>đ</sup></td>
+                        <td><span>380.000</span><sup>đ</sup></td>
+                        <td>delete</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>image 2</td>
+                        <td>product 2</td>
+                        <td><span>2</span></td>
+                        <td><span>120.000</span><sup>đ</sup></td>
+                        <td><span>240.000</span><sup>đ</sup></td>
+                        <td>delete</td>
+                    </tr>
+                </tbody>
+                <div class="table_actions">
+                    <a href="">Buy more..</a>
+                    <span onclick="closeTable('table')">Đóng</span>
+                </div>
+
+            </table>
+        </div> -->
+    </main>
+    <!-- foter -->
+    <footer>
+        <div class="footer">
+            <div class="footer_top container ">
+                <div class="footer_top-item ">
+                    <h4>Bakery</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt necessitatibus dolorum
+                        reprehenderit voluptatibus provident, illo, impedit ducimus, molestiae dolorem dignissimos eius
+                        minima dolor repellat! Et dicta placeat praesentium pariatur debitis.</p>
+                </div>
+                <div class="footer_top-item">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./product.html">SEARCH</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./about-us.html">ABOUT US</a></li>
+                        <li><a href="./contact-us.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top-item">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="./shoping-cart.html">Gateaux Mousse</a></li>
+                        <li><a href="./shoping-cart.html">Truffle Delight Cake</a></li>
+                        <li><a href="./shoping-cart.html">Cookies & Minicake</a></li>
+                        <li><a href="./shoping-cart.html">Cake fruit</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top-item">
+                    <h4>MY ACCOUNT</h4>
+                    <ul>
+                        <li><a href="./signup.html">MY ACCOUNT</a></li>
+                        <li><a href="./contact-us.html">MY ADDRESSES</a></li>
+                        <li><a href="./signup.html">MY CART</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top-item">
+                    <h4>MY Event</h4>
+                    <ul>
+                        <li><a href="./blog.html">new event</a></li>
+                        <li><a href="./product.html">New products</a></li>
+                        <li><a href="./shoping-cart.html">Best Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom container">
+                <p>© 2023 Bakery. All Rights Reserved. Powered by eProject B179.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/cart.js"></script>
+    <script src="./js/style.js"></script>
+    <!-- Script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

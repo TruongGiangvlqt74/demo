@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="css/ct-responsive.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ 
+<!-- ------------------------header--------------------------- -->
+<div class="header ">
+    <div class="header__top container">
+        <div class="header_navbar header_navbar-left " onmouseleave="closeList('header__contact')"
+            onclick="cardShow('header__contact')"><i class="fa-solid fa-bars"></i></div>
+        <nav class="logo">
+            <img src="./img/img-bakery/bakery-onepage-logo-light.png" alt="">
+        </nav>
+        <form action="" class="search_product" id="search_product">
+            <input type="text" placeholder="Tìm Kiếm">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="header__contact" id="header__contact">
+            <nav class="phone">
+                <a href="">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+84 999 999 99</span>
+                </a>
+            </nav>
+            <nav class="Listshop">
+                <a href="./product.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Shop System</span>
+                </a>
+            </nav>
+            <nav class="user">
+                <a href="./signup.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Login</span>
+                </a>
+            </nav>
+            <nav class="icon">
+                <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+                <span>2</span>
+            </nav>
+
+        </div>
+        <div class="header_navbar header_navbar-right" onmouseleave="closeList('header__bottom')"
+            onclick="cardShow('header__bottom')"><i class="fa-solid fa-bars"></i></div>
+        <div class="header_navbar header_navbar-middle" onmouseleave="closeList('search_product')"
+            onclick="cardShow('search_product')"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <nav class="header_navbar header_navbar-end">
+            <i class="fa-solid fa-cart-shopping add-card-icon " onclick="showtable('form_table')"></i>
+            <span>2</span>
+        </nav>
+    </div>
+    <div class="header__bottom container" id="header__bottom">
+        <nav class="item"><a href="./index.html">HOME</a></nav>
+        <nav class="item showlist">
+            <a href="./shoping-cart.html">Delish Motichoor Ladoo Cake </a>
+            <i class="fa fa-angle-down" id="key_down" onclick="dropDown('card-dropDown')" aria-hidden="true"></i>
+            <i class="fa-solid fa-angle-up" id="key_up" onclick="closeCard('card-dropDown')"></i>
+            <ul class="list-item " id="card-dropDown">
+                <li><a href="./shoping-cart.html"> Delicious Choco Creamy Cake </a></li>
+                <li><a href="./shoping-cart.html">Heavenly Red Velvet Cake</a> </li>
+                <li><a href="./shoping-cart.html"> Delectable Red Velvet Cake </a></li>
+                <li><a href="./shoping-cart.html"> Gateaux Mousse</a></li>
+                <li><a href="./shoping-cart.html"> Heart Shaped Sweet Delight</a></li>
+            </ul>
+        </nav>
+        <nav class="item">
+            <a href="./shoping-cart.html">Truffle Delight Cake</a>
+        </nav>
+        <nav class="item"><a href="shoping-cart.html">Cookies & Minicake </a></nav>
+        <nav class="item"><a href="./blog.html">Blog</a></nav>
+        <nav class="item"><a href="./product.html">Special Offer</a></nav>
+    </div>
+</div>
+    
+ <!--C header -->
+<div class="B_header">
+    <div class="container GR-1 ">
+        <h3 class="GH-1 GH">CONTACT US</h3>
+        <div class="GH-2 GH  ">
+            <span><a href="#" class="text-decoration-none" >Home</a></span>
+            <i class="fa-solid fa-house"></i>
+        </div>
+    </div>
+</div>
+         <!--C header -->
+
+        <!-- contact body -->
+<div class="maps container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.5902143838407!2d108.22264716709151!3d16.069793742200883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219ca4f97c919%3A0x24a85e2091f793fc!2zVHJ1bmcgVMOibSDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggVmnDqm4gUXXhu5FjIFThur8gU29mdGVjaCBBcHRlY2g!5e0!3m2!1svi!2s!4v1678857977617!5m2!1svi!2s" width="1140" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="contact-Fbody ">
+    <div class="container">
+        <div class="contact-layout">
+            <h4>CONTACT US DIRECTLY</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero officiis modi quis quidem. Impedit minima, consequuntur quidem est, nostrum ducimus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci obcaecati, necessitatibus, magni labore tenetur reiciendis, nesciunt quod quos atque quibusdam quidem similique soluta maxime. Suscipit libero similique veritatis quos perferendis.</p>
+            <div class="contact-info">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>
+                        38 Yên Bái, Quận Hải Châu, Thành Phố Đà Nẵng </li>
+                    <li><i class="fa-solid fa-phone"></i>
+                         0236.3.779.779</li>
+                    <li><i class="fa-solid fa-envelope"></i>
+                         tuyensinh@softech.vn</li>
+                    <li><i class="fa-solid fa-house"></i>
+                        https://aptech-danang.edu.vn/</li>
+                </ul>
+            </div>
+            <div class="contact-flow">
+                <h5>FOLLOW US</h5>
+                <div class="FL-contact container">
+                    <ul class="list-unstyled d-flex align-items-center ">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contact-form">
+            <h4>GIVE US A MESSAGE </h4>
+            <form method="post" name="contact-form" class="body-form">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control border border-secondary" name="first name" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control border border-secondary" name="last name" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control border border-secondary" name="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control border border-secondary" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control border border-secondary" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control border border-secondary" placeholder="Message" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="form-button">
+                            <button  id="send" class="send-bt" cols="30" rows="10">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+</div>
+
+<!-- foter -->
+<footer>
+    <div class="footer">
+        <div class="footer_top container ">
+            <div class="footer_top-item ">
+                <h4>Bakery</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt necessitatibus dolorum
+                    reprehenderit voluptatibus provident, illo, impedit ducimus, molestiae dolorem dignissimos eius
+                    minima dolor repellat! Et dicta placeat praesentium pariatur debitis.</p>
+            </div>
+            <div class="footer_top-item">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./product.html">SEARCH</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./about-us.html">ABOUT US</a></li>
+                    <li><a href="./contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="./shoping-cart.html">Gateaux Mousse</a></li>
+                    <li><a href="./shoping-cart.html">Truffle Delight Cake</a></li>
+                    <li><a href="./shoping-cart.html">Cookies & Minicake</a></li>
+                    <li><a href="./shoping-cart.html">Cake fruit</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>MY ACCOUNT</h4>
+                <ul>
+                    <li><a href="./signup.html">MY ACCOUNT</a></li>
+                    <li><a href="./contact-us.html">MY ADDRESSES</a></li>
+                    <li><a href="./signup.html">MY CART</a></li>
+                </ul>
+            </div>
+            <div class="footer_top-item">
+                <h4>MY Event</h4>
+                <ul>
+                    <li><a href="./blog.html">new event</a></li>
+                    <li><a href="./product.html">New products</a></li>
+                    <li><a href="./shoping-cart.html">Best Sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom container">
+            <p>© 2023 Bakery. All Rights Reserved. Powered by eProject B179.</p>
+        </div>
+    </div>
+</footer>
+<script src="./js/cart.js"></script>
+<script src="./js/style.js"></script>
+
+</body>
+</html>
